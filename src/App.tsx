@@ -15,6 +15,9 @@ const App: React.FC = () => {
     <div className="container">
       <div className="row mt-4">
         <div className="col-md-6">
+          <UserForm onSubmit={addUser} />
+        </div>
+        <div className="col-md-6">
           <Users users={users} />
         </div>
       </div>
